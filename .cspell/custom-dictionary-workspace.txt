@@ -1,0 +1,21 @@
+# Custom Dictionary Words
+antfu
+Composables
+demi
+iconify
+intlify
+noopener
+nprogress
+pinia
+shiki
+Shiki
+sizecheck
+taze
+typecheck
+unhead
+unocss
+unplugin
+vite
+vitesse
+vueuse
+webfont
