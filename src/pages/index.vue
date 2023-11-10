@@ -3,14 +3,10 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>
-    <div>
-      <div class="i-carbon-campsite fz100" />
-    </div>
+  <div class="pt100 dfc aic">
+    <div class="i-carbon-bot fz100" />
     <p class="fz50">
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
+      <a rel="noreferrer">BoLi</a>
     </p>
     <p>
       <em>{{ t('intro.desc') }}</em>

@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>
+  <div class="my50">
     {{ t('not-found') }}
   </div>
 </template>

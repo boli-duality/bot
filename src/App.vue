@@ -4,10 +4,10 @@ useHead({
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: 'http://eloim.top/favicon.ico',
+      href: '/vite.svg',
     },
   ],
-  title: '声海空游',
+  title: 'BoLi',
 })
 </script>
 
