@@ -1,9 +1,13 @@
 # Custom Dictionary Words
 antfu
+Attributify
+boli
 Composables
 demi
 iconify
 intlify
+jcsa
+jcsb
 noopener
 nprogress
 pinia

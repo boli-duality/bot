@@ -1,13 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title: '声海空游',
   link: [
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: '/vite.svg',
+      href: 'http://eloim.top/favicon.ico',
     },
   ],
+  title: '声海空游',
 })
 </script>
 
