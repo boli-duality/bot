@@ -50,7 +50,7 @@
   "cSpell.customDictionaries": {
     "custom-dictionary-workspace": {
       "name": "custom-dictionary-workspace",
-      "path": "${workspaceFolder:vue3template}/.cspell/custom-dictionary-workspace.txt",
+      "path": "${workspaceRoot}/.cspell/bot.txt",
       "addWords": true,
       "scope": "workspace"
     }
