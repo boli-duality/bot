@@ -9,7 +9,7 @@ import {
   // transformerDirectives,
   // transformerVariantGroup,
 } from 'unocss'
-import boliPreset from './uno.preset'
+import presetBoli from './uno.preset'
 
 export default defineConfig({
   shortcuts: [
@@ -17,7 +17,7 @@ export default defineConfig({
     // ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
   ],
   presets: [
-    boliPreset(),
+    presetBoli(),
     // presetUno(),
     // presetAttributify(),
     presetIcons({
