@@ -1,4 +1,6 @@
+import type { AxiosRequestConfig } from 'axios'
 import axios from 'axios'
+import { ApiPromise } from '~/functions'
 
 // 服务器错误处理
 const errMsg: ObjectT = {
@@ -18,13 +20,13 @@ const errMsg: ObjectT = {
 }
 
 // create an axios instance
-const request = axios.create({
+const instance = axios.create({
   baseURL: import.meta.env.VITE_BASE_API, // url = base url + request url
   timeout: 10000, // request timeout
 })
 
 // request interceptor
-request.interceptors.request.use(
+instance.interceptors.request.use(
   (config) => {
     return config
   },
@@ -34,14 +36,16 @@ request.interceptors.request.use(
 )
 
 // response interceptor
-request.interceptors.response.use(
+instance.interceptors.response.use(
   (response) => {
     const { status, data } = response
     if (status === 200) {
-      const res = data.data
-      if (res.code === 200)
-        return res
-      throw new Error(res)
+      switch (data.code) {
+        case 200:
+          return data.data
+        default:
+          throw new Error(data)
+      }
     }
     else { throw new Error(errMsg[status]) }
   },
@@ -51,4 +55,6 @@ request.interceptors.response.use(
   },
 )
 
-export default request
+export default function request(options: AxiosRequestConfig) {
+  return new ApiPromise((resolve, reject) => instance(options).then(res => resolve(res)).catch(err => reject(err)))
+}
