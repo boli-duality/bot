@@ -1,3 +1,3 @@
 ```powershell
-npx degit boli-duality/bot#main project-name
+npx degit boli-duality/bot project-name
 ```
